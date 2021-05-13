@@ -31,6 +31,8 @@ jobs:
         with:
           # Select a Checkmarx Team
           team: /CxServer/SCA_Training # default is /CxServer/SP/Company
+          # Select a Checkmarx Project
+          project: TestSCA # default is
           # GitHub API Token
           github_token: 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 # optional, default is ${{ github.token }}
           # Vulnerability Scanners (sast, sca, ast, cxgo)
