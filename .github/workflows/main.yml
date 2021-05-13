@@ -29,39 +29,31 @@ jobs:
   # uses: checkmarx-ts/checkmarx-cxflow-github-action@fe2a395cbbee31268470d92b6c53ebc483005f0f
   uses: checkmarx-ts/checkmarx-cxflow-github-action@v1.1
   with:
-    # Provide Checkmarx URL
-    checkmarx_url: https://eu.sca.checkmarx.net/ # default is 
     # Select a Checkmarx Team
     team: /CxServer/SCA_Training # default is /CxServer/SP/Company
-    # Provide Checkmarx Username
-    checkmarx_username: ruben # default is 
-    # Provide Checkmarx Password
-    checkmarx_password: Checkmarx_2021!$ # default is 
-    # Provide Checkmarx Client Secret
-    checkmarx_client_secret: # default is 
     # Select a Checkmarx Project
     project: # default is 
     # Select an Application Name used by downstream bug tracker systems
     app: JavaVulnerableLab # optional, default is SampleApp
     # Select a Checkmarx Preset
     preset: Checkmarx Default # optional, default is Checkmarx Default
-    # Break build based on Checkmarx findings?
     # GitHub API Token
     github_token: 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 # optional, default is ${{ github.token }}
     # Vulnerability Scanners (sast, sca, ast, cxgo)
-    scanners: # default is 
+    scanners: sca # default is 
     # Provide SCA API URL
-    sca_api_url: # optional, default is https://api.scacheckmarx.com
+    sca_api_url: https://api-sca.checkmarx.net # optional, default is https://api.scacheckmarx.com
     # Provide SCA APP URL
     sca_app_url: https://eu.sca.checkmarx.net # optional, default is https://sca.scacheckmarx.com
     # Provide SCA Access Control URL
-    sca_access_control_url: # optional, default is https://platform.checkmarx.net
+    sca_access_control_url: https://eu.platform.checkmarx.net # optional, default is https://platform.checkmarx.net
     # Provide SCA Tenant
-    sca_tenant: # optional, default is 
+    sca_tenant: SCATraining # optional, default is 
     # Provide SCA Username
     sca_username: ruben # optional, default is 
     # Provide SCA Password
     sca_password: Checkmarx_2021!$ # optional, default is 
+    
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
