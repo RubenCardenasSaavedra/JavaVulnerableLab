@@ -32,7 +32,7 @@ jobs:
           # Select a Checkmarx Team
           team: /CxServer/SCA_Training # default is /CxServer/SP/Company
           # Select a Checkmarx Project
-          #project: JavaVulnerableLab # default is
+          project: JavaVulnerableLab_CxFlow_Github # default is
           # Select an Application Name used by downstream bug tracker systems
           #app: JavaVulnerableLab # optional, default is SampleApp
           # GitHub API Token
