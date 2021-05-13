@@ -62,7 +62,6 @@ jobs:
     sca_username: ruben # optional, default is 
     # Provide SCA Password
     sca_password: Checkmarx_2021!$ # optional, default is 
-
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
